@@ -32,7 +32,7 @@ export default function Home() {
     return (
 
 
-        item ? <main className={style.main}>
+        item !== undefined? <main className={style.main}>
 
             <div className={style.tagBox}>
                 <label htmlFor="">Categoria</label>
