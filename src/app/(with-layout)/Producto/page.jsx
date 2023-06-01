@@ -44,7 +44,7 @@ export default function Home() {
                 <p>
                     <span>{item.nombre}</span><span>{item.costo}</span>
                 </p>
-                <img src="/cartera.svg" alt="" />
+                <img src={item.url} alt="" />
                 <div>
                     <Button styled='miniButtonSecondaryGreen' click={seeMore}>Ver +</Button>
                     <Button styled='miniButtonSecondary' click={seeMore}>Comprar</Button>
