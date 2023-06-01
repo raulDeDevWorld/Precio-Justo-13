@@ -61,7 +61,7 @@ console.log(success)
             <div className="flex items-start">
               <a href="#" className="ml-auto text-white text-[14px] text-gray-100 hover:underline">Olvidaste tu contraseña?</a>
             </div>
-            <Button type="submit" theme="Primary">Iniciar Sesión</Button>
+            <Button type="submit" theme="Transparent">Iniciar Sesión</Button>
             <div className="text-[14px] font-medium text-white">No tienes una cuenta? <Link href="/SignUp" className="text-gray-100 hover:underline">Registrate</Link >
             </div>
           </form>

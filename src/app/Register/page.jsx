@@ -76,7 +76,7 @@ function Home() {
                                 <label htmlFor="remember" className="ml-2 text-[14px] font-medium text-gray-100 ">Políticas de Servicio</label>
                             </div>
                         </div>
-                        <Button type="submit" theme="Primary">Continuar</Button>
+                        <Button type="submit" theme="Transparent">Continuar</Button>
                         <br /><br />
                         <a href="#" className="ml-auto text-gray-100 text-[14px] text-gray-100 hover:underline">Olvidaste tu contraseña?</a>
 

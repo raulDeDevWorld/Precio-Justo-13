@@ -60,7 +60,7 @@ export default function Home() {
             <div className="flex items-start">
               <a href="#" className="ml-auto text-[14px] text-gray-100 hover:underline">Olvidaste tu contraseña?</a>
             </div>
-            <Button type="submit" theme="Primary">Continuar</Button>
+            <Button type="submit" theme="Transparent">Continuar</Button>
             <div className="text-[14px] font-medium text-white">Ya tienes una cuenta? <Link href="/" className="text-gray-100 hover:underline">Inicia Sessión</Link >
             </div>
           </form>
