@@ -49,7 +49,7 @@ function Home({ children }) {
             <input type="text" id="search-navbar" className="block w-full p-2 pl-10 text-[14px] text-white border-b border-gray-300  bg-transparent focus:ring-white focus:border-white focus:outline-transparent" placeholder="Busca tu producto..." />
           </div>
 
-          <button type="button" className="inline-flex items-center p-2 text-[14px] text-white rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" onClick={() => setNav(!nav)}>
+          <button type="button" className="inline-flex items-center p-2 text-[14px] text-white rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200  dark:hover:bg-gray-700 dark:focus:ring-gray-600" onClick={() => setNav(!nav)}>
             <span className="sr-only">Open menu</span>
             <svg className="w-7 h-7" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clipRule="evenodd"  ></path></svg>
           </button>
@@ -81,35 +81,35 @@ function Home({ children }) {
       {user !== undefined && <div className="fixed bottom-0 left-0 z-50 w-full h-[70px] bg-[#0064FA] border-t border-gray-200">
         <div className="grid h-full max-w-lg grid-cols-5 mx-auto font-medium">
           <button type="button" class="inline-flex flex-col items-center justify-center px-5 hover:bg-gray-50  group">
-            <svg class="w-7 h-7 mb-1 text-white dark:text-gray-400 group-hover:text-blue-600 dark:group-hover:text-blue-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <svg class="w-7 h-7 mb-1 text-white  group-hover:text-blue-600 " fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
               <path d="M4 4a2 2 0 00-2 2v1h16V6a2 2 0 00-2-2H4z"></path>
               <path clip-rule="evenodd" fill-rule="evenodd" d="M18 9H2v5a2 2 0 002 2h12a2 2 0 002-2V9zM4 13a1 1 0 011-1h1a1 1 0 110 2H5a1 1 0 01-1-1zm5-1a1 1 0 100 2h1a1 1 0 100-2H9z"></path>
             </svg>
-            <span class="text-[14px] text-white dark:text-gray-400 group-hover:text-blue-600 dark:group-hover:text-blue-500">Pagos</span>
+            <span class="text-[14px] text-white  group-hover:text-blue-600 ">Pagos</span>
           </button>
           <button type="button" className="inline-flex flex-col items-center justify-center px-5 hover:bg-gray-50  group" onClick={() => redirectHandler(`/Cliente`)}>
-            <svg className="w-7 h-7 mb-1 text-white dark:text-gray-400 group-hover:text-blue-600 dark:group-hover:text-blue-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <svg className="w-7 h-7 mb-1 text-white  group-hover:text-blue-600 " fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
               <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"></path>
             </svg>
-            <span className="text-[14px] text-white dark:text-gray-400 group-hover:text-blue-600 dark:group-hover:text-blue-500">Inicio</span>
+            <span className="text-[14px] text-white  group-hover:text-blue-600 ">Inicio</span>
           </button>
-    <button type="button" className="inline-flex flex-col items-center justify-center px-5 hover:bg-gray-50  group" onClick={() => redirectHandler(`/Distribuidor/Agregar`)}>
-            <svg className="w-7 h-7 mb-1 text-white dark:text-gray-400 group-hover:text-blue-600 dark:group-hover:text-blue-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <button type="button" className="inline-flex flex-col items-center justify-center px-5 hover:bg-gray-50  group" onClick={() => redirectHandler(`/Distribuidor/Agregar`)}>
+            <svg className="w-7 h-7 mb-1 text-white  group-hover:text-blue-600 " fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
               <path clip-rule="evenodd" fill-rule="evenodd" d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z"></path>
             </svg>
-            <span className="text-[14px] text-white dark:text-gray-400 group-hover:text-blue-600 dark:group-hover:text-blue-500">Publicar</span>
+            <span className="text-[14px] text-white  group-hover:text-blue-600 ">Publicar</span>
           </button>
           <button type="button" className="inline-flex flex-col items-center justify-center px-5 hover:bg-gray-50  group" onClick={() => redirectHandler(`${user.rol}/Perfil`)}>
-            <svg className="w-7 h-7 mb-1 text-white dark:text-gray-400 group-hover:text-blue-600 dark:group-hover:text-blue-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <svg className="w-7 h-7 mb-1 text-white  group-hover:text-blue-600 " fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
               <path clipRule="evenodd" fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zm-2 4a5 5 0 00-4.546 2.916A5.986 5.986 0 0010 16a5.986 5.986 0 004.546-2.084A5 5 0 0010 11z"></path>
             </svg>
-            <span className="text-[14px] text-white dark:text-gray-400 group-hover:text-blue-600 dark:group-hover:text-blue-500">Perfil</span>
+            <span className="text-[14px] text-white  group-hover:text-blue-600 ">Perfil</span>
           </button>
           <button type="button" className="inline-flex flex-col items-center justify-center px-5 hover:bg-gray-50  group" onClick={() => redirectHandler(`${user.rol}`)}>
-            <svg className="w-7 h-7 mb-1 text-white dark:text-gray-400 group-hover:text-blue-600 dark:group-hover:text-blue-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <svg className="w-7 h-7 mb-1 text-white  group-hover:text-blue-600 " fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
               <path d="M5 4a1 1 0 00-2 0v7.268a2 2 0 000 3.464V16a1 1 0 102 0v-1.268a2 2 0 000-3.464V4zM11 4a1 1 0 10-2 0v1.268a2 2 0 000 3.464V16a1 1 0 102 0V8.732a2 2 0 000-3.464V4zM16 3a1 1 0 011 1v7.268a2 2 0 010 3.464V16a1 1 0 11-2 0v-1.268a2 2 0 010-3.464V4a1 1 0 011-1z"></path>
             </svg>
-            <span className="text-[14px] text-white dark:text-gray-400 group-hover:text-blue-600 dark:group-hover:text-blue-500">Config</span>
+            <span className="text-[14px] text-white  group-hover:text-blue-600 ">Config</span>
           </button>
         </div>
       </div>}
