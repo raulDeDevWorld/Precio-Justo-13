@@ -32,7 +32,7 @@ export default function Home() {
     return (
 
 
-        <main className={style.main}>
+        item ? <main className={style.main}>
 
             <div className={style.tagBox}>
                 <label htmlFor="">Categoria</label>
@@ -69,7 +69,13 @@ export default function Home() {
             <br />
             <Button styled='buttonSecondary' click={seeMore}>Comprar</Button>
 
-        </main>
+        </main> :  <div >
+           
+
+            </div>
+    
+    
+    
 
 
     )
