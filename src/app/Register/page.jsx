@@ -55,7 +55,7 @@ function Home() {
                 // dark:bg-gray-800 dark:border-gray-700"
                 >
                     <form className="space-y-6" onSubmit={registerHandler} >
-                        <h5 className="text-xl font-medium text-white">Registrate</h5>
+                        <h5 className="text-[25px] font-medium text-white">Registrate</h5>
                         <div>
                             <label htmlFor="email" className="block mb-2 text-[16px] text-left font-medium text-white">Nombre</label>
                             <Input type="text" name="email" id="email" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder="" required />
