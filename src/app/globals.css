@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  --main-bg-color: #1D0F4A;
+  --main-bg-color: 0064FA;
   --font-small: 10px;
   --font-normal: 12px;
   --font-large: 16px;
