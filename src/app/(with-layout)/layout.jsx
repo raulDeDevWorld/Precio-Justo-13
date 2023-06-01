@@ -31,10 +31,10 @@ function Home({ children }) {
   console.log(userDB)
 
   return (
-    <div className="pt-12 pb-12 min-h-screen bg-gray-200 ">
+    <div className="pt-12 pb-12 min-h-screen bg-gray-200 z-50">
 
       <nav className="w-screen fixed top-0 border-b border-gray-200 ">
-        <div className="max-w-screen-xl flex flex-wrap items-center justify-between bg-[#1D0F4A] mx-auto p-4 z-[1000]">
+        <div className="max-w-screen-xl flex flex-wrap items-center justify-between bg-[#1D0F4A] mx-auto p-4 z-50">
           <a className="flex items-center">
             <img src="/logo-dark.svg" className="h-8 mr-3" alt="Flowbite Logo" />
             {/* <span className="self-center text-2xl font-semibold whitespace-nowrap text-blue-600">Precio Justo</span> */}

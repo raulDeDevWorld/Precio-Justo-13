@@ -57,15 +57,15 @@ console.log(user)
                     <form className="space-y-6" onSubmit={registerHandler} >
                         <h5 className="text-xl font-medium text-white">Registrate</h5>
                         <div>
-                            <label htmlFor="email" className="block mb-2 text-sm text-left font-medium text-white">Nombre</label>
+                            <label htmlFor="email" className="block mb-2 text-[16px] text-left font-medium text-white">Nombre</label>
                             <Input type="text" name="email" id="email" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder="" required />
                         </div>
                         <div>
-                            <label htmlFor="email" className="block mb-2 text-sm text-left font-medium text-white">Tipo de cuenta</label>
+                            <label htmlFor="email" className="block mb-2 text-[16px] text-left font-medium text-white">Tipo de cuenta</label>
                             <Select arr={['Cliente', 'Medico', 'Clinica', 'Distribuidor']} name='rol' click={onClickHandler} />
                         </div>
                         <div>
-                            <label htmlFor="password" className="block mb-2 text-sm text-left  font-medium text-white">Ciudad</label>
+                            <label htmlFor="password" className="block mb-2 text-[16px] text-left  font-medium text-white">Ciudad</label>
                             <Select arr={['La Paz', 'Cochabamba', 'Santa Cruz']} name='Ciudad' click={onClickHandlerCity} />
                         </div>
                         <div className="flex items-start">
@@ -73,12 +73,14 @@ console.log(user)
                                 <div className="flex items-center h-5">
                                     <input id="remember" type="checkbox" value="" className="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800" required />
                                 </div>
-                                <label htmlFor="remember" className="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Políticas de Servicio</label>
+                                <label htmlFor="remember" className="ml-2 text-[14px] font-medium text-gray-100 ">Políticas de Servicio</label>
                             </div>
-                            <a href="#" className="ml-auto text-green-400 text-sm text-blue-700 hover:underline">Olvidaste tu contraseña?</a>
                         </div>
                         <Button type="submit" theme="Primary">Continuar</Button>
-                        <div className="text-sm font-medium text-gray-500 dark:text-gray-300">Ya tienes una cuenta? <Link href="/" className="text-green-400 hover:underline">Inicia Sessión</Link >
+                        <br /><br />
+                        <a href="#" className="ml-auto text-gray-100 text-[14px] text-gray-100 hover:underline">Olvidaste tu contraseña?</a>
+
+                        <div className="text-[14px] font-medium text-white dark:text-gray-300">Ya tienes una cuenta? <Link href="/" className="text-gray-100 hover:underline">Inicia Sessión</Link >
                         </div>
                     </form>
                 </div>
