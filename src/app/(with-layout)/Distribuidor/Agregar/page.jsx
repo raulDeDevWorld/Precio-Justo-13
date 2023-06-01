@@ -81,9 +81,9 @@ function Home() {
 
     return (
         <form >
-            <h3 className='text-center pb-3'>Agregar Procucto</h3>
+            <h3 className='text-center text-[16px] pb-3'>Agregar Procucto</h3>
             <div className="w-full flex justify-center">
-                <label htmlFor="file" className="block flex justify-center items-center w-[250px] h-[300px] bg-white border border-gray-300 text-gray-900 text-sm focus:ring-blue-500 focus:border-blue-500 rounded-[10px]" >
+                <label htmlFor="file" className="block flex justify-center items-center w-[250px] h-[300px] bg-white border border-gray-300 text-gray-900 text-[14px] focus:ring-blue-500 focus:border-blue-500 rounded-[10px]" >
                     {urlPostImage ? <img className="block flex justify-center items-center w-[250px] h-[300px] bg-white border border-gray-300 text-gray-900 text-sm focus:ring-blue-500 focus:border-blue-500 rounded-[10px]" style={{ objectPosition: 'center' }} src={urlPostImage} alt="" />
                         : 'Subir Imagen'}
                 </label>
