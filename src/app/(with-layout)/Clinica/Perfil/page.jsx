@@ -26,7 +26,7 @@ function Home() {
         if (user && user.rol !== undefined) readUserData(user.rol, user.uuid, userDB, setUserData, 'Perfil', null )
     }, []);
     return (
-        userDB !== undefined && userDB !== null ? <div className="min-h-[92vh] bg-white p-5">
+        userDB !== undefined && userDB !== null && userDB.Perfil !== undefined  ? <div className="min-h-[92vh] bg-white p-5">
             <br />
             <div className="flex justify-center">
                 <img className='h-[100px] w-[100px] rounded-full' src={userDB.Perfil.url} alt="" />

@@ -28,7 +28,7 @@ const uploadStorage = async (rute, file, fileName, updateUserData) => {
         .from(rute)
         .getPublicUrl(imagesRef)
 
-
+console.log(data)
 
     return updateUserData(rute, { url: data.publicUrl }, fileName)
 }

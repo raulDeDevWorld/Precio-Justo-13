@@ -35,12 +35,14 @@ const signOut = async (email, password) => {
 
 const writeUserData = async (rute, object, uuid, context, updateContext, setUserSuccess, msg, key) => {
 
-    console.log('fun')
 
     const result = await supabase
         .from(rute)
         .insert(object)
+        setUserSuccess ? setUserSuccess(msg) : ''
     result.status == 201 ? readUserData(rute, uuid, context, updateContext, key): (setUserSuccess ? setUserSuccess(msg) : '')
+    console.log(result)
+
 }
 const readUserData = async (rute, uuid, context, updateContext, key, data) => {
 
@@ -58,13 +60,25 @@ const readUserData = async (rute, uuid, context, updateContext, key, data) => {
     }
 }
 
+
+const readUserAllData = async (rute, context, updateContext) => {
+    
+    const result = await supabase
+    .from(rute)
+    .select()
+    console.log(result.data)
+
+       return  updateContext(result.data)
+    
+}
+
 const updateUserData = async (rute, object, uuid) => {
     const result = await supabase
         .from(rute)
         .update(object)
         .eq('uuid', uuid)
 
-        console.log(result)
+        console.log(object)
 }
 
 
@@ -73,5 +87,5 @@ const updateUserData = async (rute, object, uuid) => {
 
 
 
-export { onAuth, signUpWithEmailAndPassword, signInWithEmailAndPassword, signOut, writeUserData, readUserData, updateUserData }
+export { onAuth, signUpWithEmailAndPassword, signInWithEmailAndPassword, signOut, writeUserData, readUserData, updateUserData, readUserAllData }
 

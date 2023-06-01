@@ -10,6 +10,7 @@ import Button from '../../../components/Button'
 
 import Tag from '../../../components/Tag'
 import { useRouter } from 'next/navigation';
+import { useUser } from '@/context/Context.js'
 
 import { useMask } from '@react-input/mask';
 
@@ -20,13 +21,14 @@ export default function Home() {
     const inputRefDate = useMask({ mask: '__/__', replacement: { _: /\d/ } });
     const inputRefCVC = useMask({ mask: '___', replacement: { _: /\d/ } });
     const router = useRouter()
+    const { item } = useUser()
 
 
     function seeMore() {
         router.push('/Producto')
     }
 
-
+    console.log(item)
     return (
 
 
@@ -40,7 +42,7 @@ export default function Home() {
 
             <div className={style.card}>
                 <p>
-                    <span>Cartera</span><span>Bs 100</span>
+                    <span>{item.nombre}</span><span>{item.costo}</span>
                 </p>
                 <img src="/cartera.svg" alt="" />
                 <div>
@@ -48,21 +50,20 @@ export default function Home() {
                     <Button styled='miniButtonSecondary' click={seeMore}>Comprar</Button>
 
                 </div>
-                <span>Nombre de la empresa</span>
+                <span>{item.empresa}</span>
             </div>
 
             <br />
-            <h3 className={style.subtitle}>Cartera</h3>
+            <h3 className={style.subtitle}>{item.nombre}</h3>
             <br />
-            <p className={style.paragraph}>Lorem ipsum dolor sit amet consectetur. Adipiscing in nunc fermentum lacus est lacus integer. </p>
+            <p className={style.paragraph}>{item.descripcion}</p>
             <br />
             <Select arr={['Model One', 'Model Two']}></Select>
             <br />
             <div className={style.cantidadBox}>
                 <h3 className={style.subtitle}>Cantidad</h3>
-
-                <Button styled='miniButtonSecondaryGreen' click={seeMore}>+</Button>
-                <Button styled='miniButtonSecondary' click={seeMore}>-</Button>
+                <Button theme='Primary' styled='miniButtonSecondaryGreen'>+</Button>
+                <Button theme='Success' >-</Button>
 
             </div>
             <br />
