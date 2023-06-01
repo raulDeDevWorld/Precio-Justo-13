@@ -1,5 +1,5 @@
 'use client'
-import { writeUserData, readUserData} from '@/supabase/utils'
+import { writeUserData, readUserData } from '@/supabase/utils'
 import { useUser } from '@/context/Context'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -9,8 +9,8 @@ import Button from '../../components/Button'
 import Input from '@/components/Input'
 import Select from '@/components/Select'
 import { WithAuth } from '@/HOCs/WithAuth'
-  
-  
+
+
 import { useRouter } from 'next/navigation';
 
 function Home() {
@@ -31,16 +31,16 @@ function Home() {
     const registerHandler = (e) => {
         e.preventDefault()
         let nombre = e.target[0].value
-        writeUserData('Users', { uuid: user.uuid, nombre, rol, ciudad}, user.uuid , user, setUserProfile, setUserSuccess)
+        writeUserData('Users', { uuid: user.uuid, nombre, rol, ciudad }, user.uuid, user, setUserProfile, setUserSuccess)
     }
 
 
     useEffect(() => {
         if (user) readUserData('Users', user.uuid, userDB, setUserData)
-        if (user && user.rol ) router.push('/Cliente')
-      }, [user]);
+        if (user && user.rol) router.push('/Cliente')
+    }, [user]);
 
-console.log(user)
+    console.log(user)
     return (
 
         <div className={style.container}>
@@ -50,7 +50,7 @@ console.log(user)
                 <br />
                 <br />
                 <div
-                    className="w-full max-w-sm p-0 bg-transparent rounded-lg shadow sm:p-6 md:p-8 "
+                    className="w-[80%] p-0 bg-transparent rounded-lg shadow sm:p-6 md:p-8 "
                 // className="w-full max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-6 md:p-8 
                 // dark:bg-gray-800 dark:border-gray-700"
                 >
