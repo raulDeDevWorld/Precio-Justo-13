@@ -34,9 +34,9 @@ function Home({ children }) {
     <div className="pt-12 pb-12 min-h-screen bg-gray-200 z-50">
 
       <nav className="w-screen fixed top-0 border-b border-gray-200 ">
-        <div className="max-w-screen-xl flex flex-wrap items-center justify-between bg-[#0064FA] mx-auto p-4 z-50">
+        <div className="max-w-screen-xl flex flex-wrap items-center justify-between bg-[#0064FA] mx-auto p-4 h-[70px] z-50">
           <a className="flex items-center">
-            <img src="/logo-dark.svg" className="h-8 mr-3" alt="Flowbite Logo" />
+            <img src="/logo-dark.svg" className="h-12 mr-3" alt="Flowbite Logo" />
             {/* <span className="self-center text-2xl font-semibold whitespace-nowrap text-blue-600">Precio Justo</span> */}
           </a>
 
