@@ -73,7 +73,7 @@ function Home({ children }) {
 
 
 
-      <main className="p-10">
+      <main className="p-5">
         {children}
       </main>
 
