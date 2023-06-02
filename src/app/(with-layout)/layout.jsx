@@ -34,7 +34,7 @@ function Home({ children }) {
     <div className="pt-12 pb-12 min-h-screen bg-gray-200 z-50">
 
       <nav className="w-screen fixed top-0 border-b border-gray-200 ">
-        <div className="max-w-screen-xl flex flex-wrap items-center justify-between bg-[#0064FA] mx-auto p-4 h-[70px] z-50">
+        <div className="max-w-screen-xl flex flex-wrap items-center justify-between bg-[#0064FA] mx-auto p-4 h-[60px] z-50">
           <a className="flex items-center">
             <img src="/logo-dark.svg" className="h-12 mr-3" alt="Flowbite Logo" />
             {/* <span className="self-center text-2xl font-semibold whitespace-nowrap text-blue-600">Precio Justo</span> */}
@@ -78,7 +78,7 @@ function Home({ children }) {
       </main>
 
 
-      {user !== undefined && <div className="fixed bottom-0 left-0 z-50 w-full h-[70px] bg-[#0064FA] border-t border-gray-200">
+      {user !== undefined && <div className="fixed bottom-0 left-0 z-50 w-full h-[60px] bg-[#0064FA] border-t border-gray-200">
         <div className="grid h-full max-w-lg grid-cols-5 mx-auto font-medium">
           <button type="button" class="inline-flex flex-col items-center justify-center px-5 hover:bg-gray-50  group">
             <svg class="w-7 h-7 mb-1 text-white  group-hover:text-blue-600 " fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
