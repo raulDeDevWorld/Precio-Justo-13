@@ -7,8 +7,6 @@ import { useUser } from '@/context/Context.js'
 import { readUserData} from '@/supabase/utils'
 import { onAuth } from '@/supabase/utils'
 
-
-
 export function WithAuth(Component) {
     return () => {
         const { user, userDB, setUserProfile, setUserData } = useUser()
